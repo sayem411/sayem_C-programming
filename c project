@@ -82,8 +82,19 @@ printf("%f\n",PI);
 return 0;
 }
 ___________________________________________________________________
+//User input in c #7
 
-
+#include <stdio.h>
+int main(){
+float a,b;
+float c,d;
+scanf("%f %f",&a, &b);
+printf("%f %f\n",a,b);
+scanf("%f %f",&c, &d);
+printf("%f %f\n",c,d);
+return 0;
+}
+___________________________________________________________________
 
 
 

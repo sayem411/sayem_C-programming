@@ -1,6 +1,5 @@
-1) C_Code1
+//Variable definition vs declaration #1
 
-//Variable definition vs declaration
 #include <stdio.h>
 int main(){
 int var = 55;
@@ -12,6 +11,21 @@ printf("var = %d\n",var);
 return 0;
 }
 ----------------------------------------------------------
-2) C_Code2
+//simple calculation in c #2
 
-//
+#include <stdio.h>
+int main()
+{
+int a = 10;
+int b = 20;
+printf("%d + %d = %d\n",a,b,a+b);
+printf("%d - %d = %d\n",a,b,a-b);
+printf("%d * %d = %d\n",a,b,a*b);
+printf("%d / %d = %d\n",a,b,a/b);
+return 0;
+}
+
+
+
+
+

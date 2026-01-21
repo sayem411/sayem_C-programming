@@ -161,7 +161,24 @@ printf("unsigned long long - %llu\n",ull);
 return 0;
 }
 ___________________________________________________________________
+Float Data in c #11
 
+#include <stdio.h>
+int main(void){
+// Float-%f
+float f = 4588.459f;
+printf("%f\n",f);
+
+// double-%lf
+double d = 45896.25;
+printf("%lf\n",d);
+
+// long double-%lf
+long double ld = 4589654695.254;
+printf("%lf\n",ld);
+return 0;
+}
+___________________________________________________________________
 
 
 

@@ -1,3 +1,4 @@
+code:1
 //Sum of last two digit
 #include <stdio.h>
 int main() {

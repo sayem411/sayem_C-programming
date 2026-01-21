@@ -179,6 +179,33 @@ printf("%lf\n",ld);
 return 0;
 }
 ___________________________________________________________________
+charecter data in c #12
+
+#include <stdio.h>
+int main(void){
+//char - %c
+char a = 65;
+char b = a+2;
+printf("char - %c\n",a);
+printf("char - %d\t %c\n",b);
+return 0;
+}
+___________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

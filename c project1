@@ -73,3 +73,51 @@ printf("A is not B -%d\n",a_is_not_b);
 
 return 0;
 }
+___________________________________________________________________
+Logical operator in c #20
+
+#include <stdio.h>
+#include<stdbool.h>
+int main(void)
+{
+bool has_nid = false;
+bool has_passport = true;
+bool is_adult = true;
+
+bool has_identity = has_nid || has_passport;
+printf("identity-%d\n",has_identity);
+
+bool is_Permitted = has_nid && is_adult;
+printf("Permission - %d\n", is_Permitted);
+
+bool is_permitted =(has_nid ||has_passport)&& is_adult;
+printf("permission- %d\n",is_permitted);
+
+return 0;
+}
+___________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -204,7 +204,30 @@ printf("char - %d\t %c\n",b);
 return 0;
 }
 ___________________________________________________________________
+string data in c #13
 
+#include <stdio.h>
+int main(void){
+char name [20];
+Name [0]='A';
+Name [1]='S';
+Name [2]=' ';
+Name [3]='S';
+Name [4]='A';
+Name [5]='Y';
+Name [6]='E';
+Name [7]='M';
+printf("%s\n",name);
+
+char name1[20]= {'A','s', ' ','S','a','y','e','m'};
+printf("%s\n",name1);
+
+char name2[20] = "As Sayem";
+printf("%s\n",name2);
+
+return 0;
+}
+___________________________________________________________________
 
 
 

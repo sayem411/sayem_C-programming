@@ -206,7 +206,20 @@ printf("Result=%d\n",result);
 return 0;
 }
 __________________________________________________________________
+Ternary/ conditional operator in c #26
 
+#include <stdio.h>
+int main(){
+int a = 24;
+int b = 23;
+int c = a>b ? 1:0;
+printf("Result=%d\n",c);
+
+int d = a<b ? 1:0;
+printf("Result2=%d\n",d);
+return 0;
+}
+__________________________________________________________________
 
 
 

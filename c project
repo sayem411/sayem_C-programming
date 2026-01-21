@@ -1,1 +1,17 @@
+1) C_Code1
 
+//Variable definition vs declaration
+#include <stdio.h>
+int main(){
+int var = 55;
+printf("var + 5 = %d\n",var + 5);
+printf("var - 5 = %d\n",var - 5);
+printf("var * 5 = %d\n",var * 5);
+printf("var / 5 = %d\n",var / 5);
+printf("var = %d\n",var);
+return 0;
+}
+----------------------------------------------------------
+2) C_Code2
+
+//

@@ -238,8 +238,18 @@ printf("size of long long =%d\n",(int)sizeof(ll));
 return 0;
 }
 __________________________________________________________________
+Conditions in c #28
 
+What is condition?
+-- Conditions are way to implement a logical situation in programming. Sometimes we have different situations and based in one situation we have to execute some sort of code rather than other situation.
+Ex. If a user logged in our system we want to show their name, otherwise we want to show a login button.
+Conditional statement in c programming—
 
+If condition
+Else condition
+Else if condition
+Switch statement condition
+__________________________________________________________________
 
 
 

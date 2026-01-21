@@ -307,7 +307,23 @@ printf("Total:%d\n",result2);
 return 0;
 }
 ___________________________________________________________________
+Operator in c #17
 
+/There are mainly three types of operator available—
+--Unary
+--Binary
+--Ternary
+**Unary operators: Only have one operand
+Ex. a++,--b
+**Binary operators: Only have two operand
+Ex. There are different types of binary operators available
+--Arithmatics(+,-,,/,%)
+--Relational(>,<,>=,<=,+,=/=)
+--Logical(&&,”,!)
+--Bitwise(&,|,^,~,<<,>>)
+**Ternary operators: Have three operand
+Ex. Conditional operator
+___________________________________________________________________
 
 
 

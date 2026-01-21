@@ -240,6 +240,8 @@ printf("User Logged out\n");
 }
 return 0;
 }
+
+
 //User logged Out
 #include <stdio.h>
 int main(void)
@@ -254,7 +256,35 @@ return 0;
 }
 //User Logged In
 ___________________________________________________________________
+boolean works in c-2 #15
 
+#include <stdio.h>
+#include<stdbool.h>
+int main(void)
+{
+short is_logged_in =true;
+if(is_logged_in){
+printf("User Logged In\n");
+}else {
+printf("User Logged out\n");
+}
+return 0;
+}
+
+
+#include <stdio.h>
+#include<stdbool.h>
+int main(void)
+{
+short is_logged_in =false;
+if(is_logged_in){
+printf("User Logged In\n");
+}else {
+printf("User Logged out\n");
+}
+return 0;
+}
+___________________________________________________________________
 
 
 

@@ -228,8 +228,32 @@ printf("%s\n",name2);
 return 0;
 }
 ___________________________________________________________________
+Boolean works in c #14
 
-
+#include <stdio.h>
+int main(void){
+short is_logged_in =0;
+if(is_logged_in){
+printf("User Logged In\n");
+}else {
+printf("User Logged out\n");
+}
+return 0;
+}
+//User logged Out
+#include <stdio.h>
+int main(void)
+{
+short is_logged_in =1;
+if(is_logged_in){
+printf("User Logged In\n");
+}else {
+printf("User Logged out\n");
+}
+return 0;
+}
+//User Logged In
+___________________________________________________________________
 
 
 

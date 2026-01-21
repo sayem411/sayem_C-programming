@@ -43,6 +43,34 @@ printf("%d / %d = %d\n",a,b,a/b);
 printf("%d\n",abc);
 return 0;
 }
+___________________________________________________________________
+//Basic data in c #4
+
+#include <stdio.h>
+int main()
+{
+int num = 45;
+float num2 = 45.45f;
+char ch = 'T';
+printf("%d\n",num);
+printf("%f\n",num2);
+printf("%c\n",ch);
+return 0;
+}
+___________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

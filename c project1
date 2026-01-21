@@ -250,8 +250,38 @@ Else condition
 Else if condition
 Switch statement condition
 __________________________________________________________________
+If conditions #29
 
+#include <stdio.h>
+int main()
+{
+if(1){
+printf("I will execute\n");
+}
+return 0;
+}
 
+#include <stdio.h>
+int main()
+{
+int condition = 1;
+if(condition){
+printf("I will get a new bat");
+}
+return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+int a = 21;
+int b = 20;
+if(a>b){
+printf("You are elder\n");
+}
+return 0;
+}
+__________________________________________________________________
 
 
 

@@ -148,8 +148,28 @@ printf("Compliment - %d\n",f);
 return 0;
 }
 ___________________________________________________________________
+Bitwise operation in c-2 #23
 
+#include <stdio.h>
+int main(void){
+unsigned char rs1 = 212>>1;
+unsigned char rs2 = 212>>2;
+unsigned char rs3 = 212>>3;
 
+printf("Right shift1-%d\n",rs1);
+printf("Right shift2-%d\n",rs2);
+printf("Right shift3-%d\n",rs3);
+
+unsigned char ls1 = 212<<1;
+unsigned char ls2 = 212<<2;
+unsigned char ls3 = 212<<3;
+
+printf("left shift1-%d\n",ls1);
+printf("left shift2-%d\n",ls2);
+printf("left shift3-%d\n",ls3);
+return 0;
+}
+__________________________________________________________________
 
 
 

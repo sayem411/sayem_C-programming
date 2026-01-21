@@ -184,7 +184,28 @@ printf("Pre Increment-%d\n",a);
 return 0;
 }
 __________________________________________________________________
+Unary operators in c-2 #25
 
+#include <stdio.h>
+int main(){
+int a = 5;
+int result = a + ++a + a++;
+printf("A=%d\n",a);
+printf("Result=%d\n",result);
+
+return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+int a = 5;
+int result = a + --a + a--;
+printf("A=%d\n",a);
+printf("Result=%d\n",result);
+return 0;
+}
+__________________________________________________________________
 
 
 

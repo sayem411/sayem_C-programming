@@ -324,8 +324,20 @@ Ex. There are different types of binary operators available
 **Ternary operators: Have three operand
 Ex. Conditional operator
 ___________________________________________________________________
+Arithmatic operator in c #18
 
-
+#include <stdio.h>
+int main(){
+int a = 30;
+int b =7;
+printf("Addition:%d\n", a+b);
+printf("subtraction:%d\n",a-b);
+printf("multiplication:%d\n",a*b);
+printf("division:%d\n",a/b);
+printf("reminder:%d\n",a %b);
+return 0;
+}
+___________________________________________________________________
 
 
 

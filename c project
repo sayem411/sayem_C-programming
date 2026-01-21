@@ -143,8 +143,24 @@ printf("I am hexadecimal - %x\n",h);
 return 0;
 }
 ___________________________________________________________________
+Integer type data in c-2 #10
 
-
+#include <stdio.h>
+int main(){
+// unsigned Integers
+printf("Unsigned Integers\n");
+//unsigned short - %hu
+unsigned short us = 41;
+printf("unsigned short - %hu\n",us);
+//unsigned long - %lu
+unsigned long ul = 44545;
+printf("unsigned long - %lu\n",ul);
+//unsigned long long - %llu
+unsigned long long ull = 44545;
+printf("unsigned long long - %llu\n",ull);
+return 0;
+}
+___________________________________________________________________
 
 
 

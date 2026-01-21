@@ -170,7 +170,20 @@ printf("left shift3-%d\n",ls3);
 return 0;
 }
 __________________________________________________________________
+Unary operators in c-1 #24
 
+#include <stdio.h>
+int main(){
+int a = 23;
+//post increment
+a++;
+printf("Post Increment-%d\n",a);
+//Pre increment
+++a;
+printf("Pre Increment-%d\n",a);
+return 0;
+}
+__________________________________________________________________
 
 
 

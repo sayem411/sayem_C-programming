@@ -282,7 +282,20 @@ printf("You are elder\n");
 return 0;
 }
 __________________________________________________________________
+If_else conditions #30
 
+#include <stdio.h>
+int main()
+{
+int sayem = 24;
+int anika = 23;
+if(sayem>anika){
+printf("sayem is elder\n");
+} else{
+printf("anika is elder\n");
+}
+return 0;
+}
 
 
 

@@ -112,8 +112,37 @@ return 0;
 }
 // 10 2.5
 ___________________________________________________________________
+Integer type data in c #9
 
+#include <stdio.h>
+int main(){
+//signed Integer data
+//short %d %hi
+short a = 45;
+printf("I am short - %hi\n",a);
 
+//Int %d %i
+int b = 1000;
+printf("I am int - %d\n",b);
+
+//long %ld %li
+long c = 1200l;
+printf("I am long - %ld\n",c);
+
+//long long %lld %lli
+long long d = 34343ll;
+printf("I am long long- %lld\n",d);
+
+//octal int %o
+int o = 0777;
+printf("I am octal - %o\n",o);
+
+//hexadecimal int %x %x
+int h = 0Xfff;
+printf("I am hexadecimal - %x\n",h);
+return 0;
+}
+___________________________________________________________________
 
 
 

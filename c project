@@ -338,7 +338,28 @@ printf("reminder:%d\n",a %b);
 return 0;
 }
 ___________________________________________________________________
+Relation operator in c #19
 
+#include <stdio.h>
+#include<stdbool.h>
+int main()
+{
+int a = 35;
+int b = 30;
+bool a_is_greater = a>b;
+printf("A is greater than B -%d\n",a_is_greater);
+
+bool a_is_smaller = a<b;
+printf("A is smaller than B -%d\n",a_is_smaller);
+
+bool a_is_b = a==b;
+printf("A is B -%d\n",a_is_b);
+
+bool a_is_not_b = a!=b;
+printf("A is not B -%d\n",a_is_not_b);
+
+return 0;
+}
 
 
 

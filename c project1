@@ -125,8 +125,29 @@ printf("%d\n",a);
 return 0;
 }
 ___________________________________________________________________
+Bitwise operator in c-1 #22
+#include<stdio.h>
+int main(void)
+{
+unsigned char a = 12;
+unsigned char b = 25;
 
+unsigned char c = a&b;
+printf("AND Operation - %d\n",c);
 
+unsigned char d = a|b;
+printf("OR Operation - %d\n",d);
+
+unsigned char e = a^b;
+printf("XOR Operation - %d\n",e);
+return 0;
+
+ unsigned char f = ~25;
+printf("Compliment - %d\n",f);
+
+return 0;
+}
+___________________________________________________________________
 
 
 

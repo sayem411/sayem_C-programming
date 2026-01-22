@@ -120,12 +120,7 @@ return 0;
 }
 ___________________________________________________________________
 break-continue statement in c #56
-Open
-@sayem411
-Description
-sayem411
-opened on Aug 19, 2025
-Owner
+
 #include <stdio.h>
 int main(void){
 int i;
@@ -137,8 +132,25 @@ printf("I=%d\n",i);
 }
 return 0;
 }
+___________________________________________________________________
+array .c #57
 
+#include <stdio.h>
+int main(void){
+int my_array[5];
 
+my_array[0]=10;
+my_array[1]=15;
+my_array[2]=20;
+my_array[3]=25;
+my_array[4]=30;
+printf("%d\n",my_array[0]);
+printf("%d\n",my_array[1]);
+printf("%d\n",my_array[2]);
+printf("%d\n",my_array[3]);
+printf("%d\n",my_array[4]);
+return 0;
+}
 
 
 

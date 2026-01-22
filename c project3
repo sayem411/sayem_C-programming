@@ -129,6 +129,33 @@ printf("You are not allowed\n");
 return 0;
 }
 ___________________________________________________________________
+which number is big #36
+
+#include <stdio.h>
+int main(){
+int a,b;
+printf("Enter value is A-\n");
+printf("Enter value is B-\n");
+scanf("%d %d",&a,&b);
+if(a>b){
+printf("A is greater than B\n");
+}else{
+printf("B is greater than A\n");
+}
+return 0;
+}
+___________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
 
 
 

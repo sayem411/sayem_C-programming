@@ -19,7 +19,26 @@ printf("%d is not a leap year",year);
 return 0;
 }
 ___________________________________________________________________
+Picked a lucky number #42
 
+#include <stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(void)
+{
+int picked_number,given_number;
+time_t t;
+srand((unsigned)time(&t));
+picked_number=rand()%10+1;
+printf("Enter your choosen number-\n");
+scanf("%d",&given_number);
+if(given_number==picked_number){
+printf("You are win\n");
+}else{
+printf("You lose,picked_number was-%d\n",picked_number);
+}
+return 0;
+}
 
 
 

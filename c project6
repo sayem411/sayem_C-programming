@@ -1,1 +1,25 @@
+size of array in c #61
+
+#include <stdio.h>
+int main(){
+int scores[] = {82,84,98,60,86,98};
+int length = sizeof(scores)/ sizeof(scores[0]);
+printf("Size of scores array = %d\n",length);
+return 0;
+}
+___________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

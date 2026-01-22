@@ -1,1 +1,116 @@
+project #66
+Open
+Open
+project
+#66
+@sayem411
+Description
+sayem411
+opened on Aug 21, 2025 · edited by sayem411
+Owner
+#include <stdio.h>
+#define MAX_LENGTH 100
+int main()
+{
 
+int data[MAX_LENGTH];
+int length = 0;
+int value,index;
+
+int input;
+do{
+printf("Menu: \n");
+printf("\n");
+printf("1. Add\n");
+printf("2.Insert\n");
+printf("3.Edit\n");
+printf("4.Delete\n");
+printf("5.Display\n");
+printf("6.Clear\n");
+printf("0.Exit\n");
+printf("\n");
+
+printf("Enter a menu:\n");
+scanf("%d",&input);
+
+printf("_____________Result___________\n");
+switch(input){
+case 0:
+//Do nothing, just terminate
+break;
+case 1:
+//Add operation
+printf("Please Enter an Integer value: ");
+scanf("%d",&value);
+data[length]= value;
+printf("%d\n inserted at Index %d\n",value,length);
+length++;
+break;
+case 2:
+//Insert operation
+printf("Please Enter an Integer value:\n ");
+scanf("%d",&value);
+printf("Please Enter an Index between 0- %d: ",length);
+scanf("%d",&index);
+for(int i = length;i > index;i--){
+data[i] = data[i-1];
+}
+data[index] = value;
+length++;
+printf("%d\n inserted at index %d\n",value,index);
+
+break;
+case 3:
+//Edit operation
+printf("Please Enter an Index between 0- %d:\n ",length-1);
+scanf("%d\n",&index);
+printf("Please Enter a new Integer value:\n ");
+scanf("%d",&value);
+data[index] = value;
+printf("%d Data updated at Index %d\n",value,index);
+break;
+
+ case 4:
+ //Delete operation
+   printf("Please Enter an Index between 0- %d: \n",length-1);
+ scanf("%d",&index);
+ int dv =data[index];
+ for(int i =index;i<length;i++){
+ data[i] = data[i+1];
+ }
+ data [length] = 0;
+ length--;
+ printf("Deleted at  Index %d\n",dv,index);
+break;
+
+ case 5:
+ //Display Items using a for loop
+ if(length==0){
+   printf("There is no data\n");
+ }else{
+ printf("DATA:  ");
+ int i;
+ for( i = 0; i<length; i++);
+ {
+   data[i] = 0;
+ }
+ length = 0;
+ printf("data cleared\n");
+break;
+case 6:
+for( i = 0; i<length; i++);
+{
+printf("%d\t",data[i]);
+}
+printf("\n");
+}
+break;
+default:
+printf("Invalid input\n");
+break;
+}
+printf("__Result End\n");
+
+}while(input !=0);
+return 0;
+}

@@ -39,8 +39,22 @@ printf("You lose,picked_number was-%d\n",picked_number);
 }
 return 0;
 }
+___________________________________________________________________
+Loops in c #43
 
+What is loop?
+--Loop is a statement which repeat a given task a given amount of time
+Ex. printing name of the screen, counting 1-100, find even number between 1-100
 
+Why do we use loop?
+--In programming we always have some repetitive tasks. To reduce repetitive code we use loop
+Ex. We have a student database and we want them to send a notice. If we want it to be done manually it will become near to impossible.
+
+Type of loops on c
+--For loops(follow step)
+--While loops (Follow condition)
+--Do while loop(Follow condition but execute at least once)
+____________________________________________________________________________________________________
 
 
 

@@ -121,8 +121,35 @@ printf("\n");
 return 0;
 }
 ____________________________________________________________________
+while loop in c #48
 
+#include <stdio.h>
+int main(){
+int i =1;
+while(i<=10){
+printf("I=%d\n",i);
+i++;
+}
+return 0;
+}
+________________________________________________________________________
+#include <stdio.h>
+int main()
+{
+int a,b;
+char ch='c';
 
+while(ch!='q'){
+printf("Enter two number:\n");
+scanf("%d %d",&a,&b);
+printf("Result=%d\n",a+b);
+printf("Type c to run again. Type q to quit:\n");
+scanf("%c",&ch);
+
+}
+return 0;
+}
+________________________________________________________________________
 
 
 

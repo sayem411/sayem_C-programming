@@ -119,7 +119,8 @@ Integer type data in c #9
 int main(){
 //signed Integer data
 //short %d %hi
-short a = 45;
+short a;
+scanf("%hi",&a);
 printf("I am short - %hi\n",a);
 
 //Int %d %i

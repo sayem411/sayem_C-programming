@@ -35,8 +35,33 @@ printf("Max = %d\n",max);
 return 0;
 }
 ___________________________________________________________
+variable-length array element #63
 
-
+#include <stdio.h>
+int main(){
+int i,size,sum,avg,max;
+printf("Enter Array length size:");
+scanf("%d",&size);
+int nums[size];
+printf("Input\n");
+for(i=0;i<size;i++){
+scanf("%d\n",&nums[i]);
+}
+sum = 0;
+max = nums[0];
+for(i=0;i<size;i++){
+sum+=nums[i];
+if(max<nums[i]){
+max = nums[i];
+}
+}
+avg = sum/size;
+printf("sum = %d\n",sum);
+printf("avg = %d\n",avg);
+printf("Max = %d\n",max);
+return 0;
+}
+___________________________________________________________
 
 
 

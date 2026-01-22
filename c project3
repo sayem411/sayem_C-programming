@@ -15,3 +15,27 @@ printf("They are same age");
 return 0;
 }
 ___________________________________________________________________
+else if condition-2 #32
+
+#include <stdio.h>
+int main(void){
+char color_code;
+printf("Enter color code:");
+scanf("%c",& color_code);
+if(color_code =='R'){
+printf("It is Red\n");
+} else if(color_code =='G'){
+printf("It is Green\n");
+}
+else if(color_code =='B'){
+printf("It is Blue\n");
+}
+else if(color_code =='Y'){
+printf("It is Yellow\n");
+}
+else{
+printf("Wrong code");
+}
+
+return 0;
+}

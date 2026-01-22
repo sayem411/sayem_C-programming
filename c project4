@@ -88,9 +88,22 @@ printf("%d is Even\n",i);
 }
 return 0;
 }
+____________________________________________________________________
+for loop 3 #46
 
-
-
+#include <stdio.h>
+int main(void){
+int i;
+for(i=1;i<=100;i++ ){
+if(i%2==1){
+printf("%d is odd\n",i);
+}else{
+printf("%d is even\n",i);
+}
+}
+return 0;
+}
+____________________________________________________________________
 
 
 

@@ -146,9 +146,61 @@ printf("\n English:Total = %d and AVG = %0.2f",total_score_en,(float)(total_scor
 
 return 0;
 }
+___________________________________________________________
+Matrix #67
+Open
+Open
+Matrix
+#68
+@sayem411
+Description
+sayem411
+opened on Aug 26, 2025
+Owner
+#include <stdio.h>
+int main()
+{
+int m,n,i,j;
+//Get tyhe size of the matrics from the user
+printf("Enter the number of rows and column of the matrics:\n");
+scanf("%d%d",&m,&n);
+//Declare the matrics
+int matrix1[m][n],matrix2[m][n],result[m][n];
+//Get the elements of the matrics from the user
+printf("Enter the elements of first matrics:\n");
+for(i=0;i<m;i++){
+for(j=0;j<n;j++){
+scanf("%d",&matrix1[i][j]);
 
+}
+}
+printf("Enter the elements of second matrics:\n");
+for(i=0;i<m;i++){
+for(j=0;j<n;j++){
+scanf("%d",&matrix2[i][j]);
 
+}
+}
+//Calculate the sum
+for(i=0;i<m;i++){
+for(j=0;j<n;j++){
+result[i][j] = matrix1[i][j]+matrix2[i][j];
 
+}
+}
+//print the result
+printf("The sum of the matrics:\n");
+for(i=0;i<m;i++){
+for(j=0;j<n;j++){
+printf("%d\t",result[i][j]);
+
+}
+printf("\n");
+}
+
+return 0;
+}
+___________________________________________________________
 
 
 

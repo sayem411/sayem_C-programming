@@ -11,7 +11,7 @@ printf("var / 5 = %d\n",var / 5);
 printf("var = %d\n",var);
 return 0;
 }
-----------------------------------------------------------
+____________________________________________
 //simple calculation in c #2
 
 #include <stdio.h>

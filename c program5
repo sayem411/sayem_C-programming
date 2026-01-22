@@ -170,8 +170,33 @@ printf("%d\n",my_array[i]);
 return 0;
 }
 ___________________________________________________________________
+array _sum + avarage +highest number #59
 
-
+#include <stdio.h>
+int main(){
+int scores[5];
+scores[0]= 85;
+scores[1]=82 ;
+scores[2]=90 ;
+scores[3]=89 ;
+scores[4]= 83;
+//Find sum of scores
+int sum =0,i;
+for(i=0;i<5;i++){
+sum+=scores[i];
+}printf("Sum = %d\n",sum);
+//Find avarage
+printf("Avarage scores = %d\n",sum/5);
+//Find highest scores
+int max = scores[0];
+for(i =0;i<5;i++){
+if(scores[i]>max){
+max = scores [i];
+}
+}printf("Max = %d\n",max);
+return 0;
+}
+___________________________________________________________________
 
 
 

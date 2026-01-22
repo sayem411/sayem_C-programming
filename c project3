@@ -1,1 +1,16 @@
+else If condition #31
 
+#include <stdio.h>
+int main(){
+int sayem = 20;
+int anika = 20;
+if(sayem>anika){
+printf("sayem is elder\n");
+} else if(anika>sayem){
+printf("anika is elder\n");
+}
+else{
+printf("They are same age");
+}
+return 0;
+}

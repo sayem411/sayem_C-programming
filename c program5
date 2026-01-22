@@ -14,7 +14,38 @@ printf("I will run at least once\n");
 return 0;
 }
 ___________________________________________________________________
+lucky do while loop #52
 
+#include<stdbool.h>
+int main(void){
+time_t t;
+srand((unsigned)time(&t));
+int choosen_number,chance = 3;
+bool is_loss = true;
+int lucky_number = rand() % 25 + 1;
+do{
+printf("Guess the lucky number(%d):\n",chance);
+scanf("%d",&choosen_number);
+if(lucky_number == choosen_number){
+printf("Congratulation!You have choose the correct number\n");
+is_loss = false;
+break;
+}
+if(choosen_number<lucky_number){
+printf("Your choosen number is small\n");
+
+}else{
+printf("Your choosen number is big\n");
+}
+
+chance--;
+}while(chance>0);
+if(is_loss){
+printf("You have loss,Lucky number is %d\n",lucky_number);
+}
+return 0;
+}
+___________________________________________________________________
 
 
 

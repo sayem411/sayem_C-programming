@@ -160,7 +160,29 @@ printf("%d is odd\n",n);
 return 0;
 }
 ___________________________________________________________________
+Uppercase-lowercase #39
 
+#include <stdio.h>
+int main(){
+char ch;
+printf("Enter your charecter -\n");
+scanf("%c",&ch);
+
+if(ch>= 48 && ch<=57){
+printf("%c is a number\n",ch);
+
+}else if(ch>=65 && ch<=90){
+printf("%c is Uppercase letter\n",ch);
+
+}else if(ch>=97 && ch<=122){
+printf("%c is lowercase letter\n",ch);
+
+}else{
+printf("special charecter\n",ch);
+}
+return 0;
+}
+___________________________________________________________________
 
 
 

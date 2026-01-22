@@ -8,7 +8,40 @@ printf("Size of scores array = %d\n",length);
 return 0;
 }
 ___________________________________________________________
-
+input array element #62
+Open
+Open
+input array element
+#62
+@sayem411
+Description
+sayem411
+opened on Aug 21, 2025
+Owner
+#include <stdio.h>
+int main()
+{
+int size = 5;
+int nums[size];
+int i,sum,avg,max;
+printf("Input\n");
+for(i=0;i<size;i++){
+scanf("%d\n",&nums[i]);
+}
+sum = 0;
+max = nums[0];
+for(i=0;i<size;i++){
+sum+=nums[i];
+if(max<nums[i]){
+max = nums[i];
+}
+}
+avg = sum/size;
+printf("sum = %d\n",sum);
+printf("avg = %d\n",avg);
+printf("Max = %d\n",max);
+return 0;
+}
 
 
 

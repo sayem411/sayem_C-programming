@@ -81,8 +81,33 @@ printf("Wrong day number\n");
 return 0;
 }
 ___________________________________________________________________
+switch statement-2 #34
 
+#include <stdio.h>
+int main(void)
+{
+int day_number;
+printf("Enter day number:");
+scanf("%d\n",& day_number);
+switch(day_number){
 
+case 0:
+case 6:
+printf("Off Day\n");
+break;
+ case 1:
+ case 2:
+ case 3:
+ case 4:
+ case 5:
+printf("Work day\n");
+break;
+default:
+printf("Wrong day\n");
+}
+return 0;
+}
+___________________________________________________________________
 
 
 

@@ -62,7 +62,33 @@ printf("Max = %d\n",max);
 return 0;
 }
 ___________________________________________________________
+search_array #64
 
+#include <stdio.h>
+int main()
+{
+int rolls[] = {1,2,3,4,6,7,9,12,13,14,15};
+int length = sizeof(rolls)/sizeof(rolls[0]);
+int search_key,i;
+int is_found = -1;
+//User Input
+printf("Enter search key: ");
+scanf("%d\n",&search_key);
+//search
+for(i=0;i<length;i++){
+if(rolls[i]==search_key){
+is_found =i;
+break;
+}
+}
+if(is_found==-1){
+printf("Item not found\n");
+}else{
+printf("Item found at Index\n",is_found);
+
+}
+return 0;
+}
 
 
 

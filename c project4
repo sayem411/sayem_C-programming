@@ -55,8 +55,17 @@ Type of loops on c
 --While loops (Follow condition)
 --Do while loop(Follow condition but execute at least once)
 ____________________________________________________________________________________________________
+for loop 1 #44
 
-
+#include <stdio.h>
+int main(void){
+int i;
+for(i=1;i<=5;i++ ){
+printf("%d-As Sayem\n",i);
+}
+return 0;
+}
+_____________________________________________________
 
 
 

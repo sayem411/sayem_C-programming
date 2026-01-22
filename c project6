@@ -9,15 +9,7 @@ return 0;
 }
 ___________________________________________________________
 input array element #62
-Open
-Open
-input array element
-#62
-@sayem411
-Description
-sayem411
-opened on Aug 21, 2025
-Owner
+
 #include <stdio.h>
 int main()
 {
@@ -42,7 +34,7 @@ printf("avg = %d\n",avg);
 printf("Max = %d\n",max);
 return 0;
 }
-
+___________________________________________________________
 
 
 

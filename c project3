@@ -39,3 +39,61 @@ printf("Wrong code");
 
 return 0;
 }
+___________________________________________________________________
+switch statement-1 #33
+
+#include <stdio.h>
+int main(void){
+int day_number;
+printf("Enter day number:");
+scanf("%d\n",& day_number);
+switch(day_number){
+case 0:
+printf("Saturday\n");
+break;
+
+ case 1:
+printf("sunday\n");
+break;
+
+ case 2:
+printf("monday\n");
+break;
+
+ case 3:
+printf("tuesday\n");
+break;
+
+ case 4:
+printf("wednesday\n");
+break;
+
+ case 5:
+printf("thursday\n");
+break;
+
+ case 6:
+printf("friday\n");
+break;
+default:
+printf("Wrong day number\n");
+}
+return 0;
+}
+___________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

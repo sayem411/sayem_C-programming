@@ -257,7 +257,6 @@ printf("User Logged out\n");
 }
 return 0;
 }
-//User Logged In
 ___________________________________________________________________
 boolean works in c-2 #15
 

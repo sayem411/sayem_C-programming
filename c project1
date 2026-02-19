@@ -203,7 +203,7 @@ int main(void)
 char a = 65;
 char b = a+2;
 printf("char - %c\n",a);
-printf("char - %d\t %c\n",b);
+printf("char - %d\t %c\n",a,b);
 return 0;
 }
 ___________________________________________________________________

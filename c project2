@@ -252,6 +252,22 @@ Switch statement condition
 __________________________________________________________________
 If conditions #29
 
+
+#include <stdio.h>
+int main()
+{
+int a;
+scanf("%d",&a);
+if(a==1){
+printf("I will execute\n");
+}else{
+    printf("I will not execute\n");
+}
+return 0;
+}
+
+
+
 #include <stdio.h>
 int main()
 {
@@ -260,6 +276,8 @@ printf("I will execute\n");
 }
 return 0;
 }
+
+
 
 #include <stdio.h>
 int main()

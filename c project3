@@ -134,9 +134,10 @@ which number is big #36
 #include <stdio.h>
 int main(){
 int a,b;
-printf("Enter value is A-\n");
-printf("Enter value is B-\n");
-scanf("%d %d",&a,&b);
+printf("Enter value is A-");
+scanf(" %d",&a);
+printf("Enter value is B-");
+scanf(" %d",&b);
 if(a>b){
 printf("A is greater than B\n");
 }else{

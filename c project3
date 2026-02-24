@@ -166,7 +166,7 @@ Uppercase-lowercase #39
 #include <stdio.h>
 int main(){
 char ch;
-printf("Enter your charecter -\n");
+printf("Enter your charecter -");
 scanf("%c",&ch);
 
 if(ch>= 48 && ch<=57){
@@ -179,7 +179,7 @@ printf("%c is Uppercase letter\n",ch);
 printf("%c is lowercase letter\n",ch);
 
 }else{
-printf("special charecter\n",ch);
+printf("special charecter\n");
 }
 return 0;
 }

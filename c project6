@@ -43,9 +43,9 @@ int i,size,sum,avg,max;
 printf("Enter Array length size:");
 scanf("%d",&size);
 int nums[size];
-printf("Input\n");
+printf("Input-");
 for(i=0;i<size;i++){
-scanf("%d\n",&nums[i]);
+scanf("%d",&nums[i]);
 }
 sum = 0;
 max = nums[0];

@@ -148,15 +148,7 @@ return 0;
 }
 ___________________________________________________________
 Matrix #67
-Open
-Open
-Matrix
-#68
-@sayem411
-Description
-sayem411
-opened on Aug 26, 2025
-Owner
+
 #include <stdio.h>
 int main()
 {

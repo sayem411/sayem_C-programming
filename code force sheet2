@@ -28,9 +28,8 @@ int main(){
   #include <stdio.h>
 int main() {
     int N,x;
-    scanf("%d", &N);
-    int even = 0, odd = 0, positive = 0, negative = 0;
-
+int even = 0, odd = 0, positive = 0, negative = 0;
+scanf("%d", &N);
     for(int i = 0; i < N; i++) {
         scanf("%d", &x);
 

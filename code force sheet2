@@ -283,14 +283,13 @@ int main() {
     char S;
     int N,X;
 
-  
-    scanf(" %c", &S);
-    
+    scanf(" %c", &S); 
     scanf("%d", &N); 
-    for (int i = 0; i < N; i++) {
+
+    for (int i = 1; i <= N; i++) {
         scanf("%d", &X);
 
-        for (int j = 0; j < X; j++) {
+        for (int j = 1; j <= X; j++) {
             printf("%c", S);
         }
         printf("\n");

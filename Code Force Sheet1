@@ -1,0 +1,447 @@
+//a)say hello with c
+#include<stdio.h>
+int main() {
+char S[100]; 
+scanf("%s",S);
+printf("Hello, %s\n",S);
+return 0;
+}
+-----------------------------------
+//b)Basic Data Types
+#include<stdio.h>
+int main(){
+int a;
+long long int b;
+char c;
+float d;
+double e;
+scanf("%d %lld %c %f %lf",&a,&b,&c,&d,&e);
+printf("%d\n%lld\n%c\n%.2f\n%.1f",a,b,c,d,e);
+return 0;
+}
+------------------------------------------------
+//c)Simple Calculator
+#include<stdio.h>
+int main(){
+long long X,Y;
+scanf("%lld%lld",&X,&Y);
+printf("%lld + %lld = %lld\n",X,Y,X + Y);
+printf("%lld * %lld = %lld\n",X,Y,X * Y);
+printf("%lld - %lld = %lld\n",X,Y,X - Y);
+return 0;
+}
+------------------------------------------
+//d)Difference
+#include<stdio.h>
+int main(){
+long long A,B,C,D;
+scanf("%lld %lld %lld %lld",&A,&B,&C,&D);
+printf("Difference = %lld\n",(A*B)-(C*D));
+return 0;
+}
+-----------------------------
+//e)Area of a Circle
+#include<stdio.h>
+int main(){
+double R,area;
+double PI=3.141592653;
+scanf("%lf",&R);
+area=PI*R*R;
+printf("%.9f\n",area);
+return 0;
+}
+--------------------------
+//f)Digits Summation
+#include <stdio.h>
+int main(){
+long long N,M;
+scanf("%lld %lld",&N,&M);
+N=N%10;
+M=M%10;
+int sum=N+M;
+printf("%d\n",sum);
+return 0;
+}
+---------------------------
+//g)Summation from 1 to N
+#include <stdio.h>
+int main() {
+    long long n,sum;
+   scanf("%lld", &n);
+    sum = n * (n + 1) / 2;
+    printf("%lld\n", sum);
+
+    return 0;
+}
+-----------------------------------------------------------
+//h)Two numbers
+#include <stdio.h>
+#include <math.h> 
+int main() {
+    double a, b;
+    
+    scanf("%lf %lf", &a, &b);
+    
+    double res = a / b;
+    printf("floor %.0f / %.0f = %d\n", a, b, (int)floor(res));
+    printf("ceil %.0f / %.0f = %d\n", a, b, (int)ceil(res));
+    printf("round %.0f / %.0f = %d\n", a, b, (int)round(res));
+
+    return 0;
+}
+-----------------------------------------------------
+//i)Welcome for you with Conditions
+#include<stdio.h>
+int main(){
+int A,B;
+scanf("%d%d",&A,&B);
+if(A>=B){
+    printf("Yes\n");
+}else{
+    printf("No\n");
+}
+    return 0;
+}
+---------------------------------------------
+//j)Multiples
+#include<stdio.h>
+int main(){
+int A,B;
+scanf("%d%d",&A,&B);
+if(A%B==0|| B%A==0){
+printf("Multiples\n");
+}else{
+printf("No Multiples\n");
+}
+return 0;
+}
+-------------------------------------------------------
+//k)Max and Min
+#include <stdio.h>
+int main() {
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    int min = (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
+    int max = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+    printf("%d %d\n", min, max);
+    return 0;
+}
+------------------------------------------------------
+//l)The Brothers
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char f1[101], s1[101];
+    char f2[101], s2[101];
+    scanf("%s %s", f1, s1);
+    scanf("%s %s", f2, s2);
+    if (strcmp(s1, s2) == 0) {
+        printf("ARE Brothers");
+    } else {
+        printf("NOT");
+    }
+
+    return 0;
+}
+---------------------------------------------------
+//m)Capital or Small or Digit
+#include<stdio.h>
+int main(){
+char X;
+scanf("%c",&X);
+if (X>='0' && X<='9'){
+    printf("IS DIGIT\n");
+} else if (X>= 'A' && X <= 'Z') {
+    printf("ALPHA\nIS CAPITAL\n");
+} else{
+      printf("ALPHA\nIS SMALL\n");
+}
+return 0;
+}
+------------------------------------------------------
+//n)char
+#include<stdio.h>
+int main(){
+char X;
+scanf("%c",&X);
+if(X>='a'&& X<='z'){
+printf("%c\n",X-32);
+}else{
+printf("%c\n",X+32);
+}
+return 0;
+}
+--------------------------------------------
+//o)calculator
+#include <stdio.h>
+int main() {
+int a,b;
+char s;
+scanf("%d%c%d", &a, &s, &b);
+    switch (s) {
+        case '+':
+            printf("%d\n", a + b);
+            break;
+        case '-':
+            printf("%d\n", a - b);
+            break;
+        case '*':
+            printf("%d\n", a * b);
+            break;
+        case '/':
+            printf("%d\n", a / b);
+            break;
+}
+return 0;
+}
+-------------------------------------------
+//p)First digit !
+#include <stdio.h>
+
+int main() {
+    int x;
+    scanf("%d", &x);
+    int firstDigit = x / 1000;
+    if (firstDigit % 2 == 0) {
+        printf("EVEN");
+    } else {
+        printf("ODD");
+    }
+    return 0;
+}
+----------------------------------------
+//q)Coordinates of a Poin
+#include <stdio.h>
+
+int main() {
+    double x, y;
+    scanf("%lf %lf", &x, &y);
+
+    if (x == 0 && y == 0) {
+        printf("Origem");
+    } 
+    else if (x == 0) {
+        printf("Eixo Y");
+    } 
+    else if (y == 0) {
+        printf("Eixo X");
+    } 
+    else if (x > 0 && y > 0) {
+        printf("Q1");
+    } 
+    else if (x < 0 && y > 0) {
+        printf("Q2");
+    } 
+    else if (x < 0 && y < 0) {
+        printf("Q3");
+    } 
+    else {
+        printf("Q4");
+    }
+
+    return 0;
+}
+-----------------------------------------------
+//r)Age in Days
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int years = N / 365;
+    N = N % 365;
+
+    int months = N / 30;
+    int days = N % 30;
+
+    printf("%d years\n", years);
+    printf("%d months\n", months);
+    printf("%d days\n", days);
+
+    return 0;
+}
+-----------------------------------------------
+//s)Interval
+#include <stdio.h>
+
+int main() {
+    double x;
+    scanf("%lf", &x);
+    if (x >= 0 && x <= 25) {
+        printf("Interval [0,25]\n");
+    } 
+    else if (x > 25 && x <= 50) {
+        printf("Interval (25,50]\n");
+    } 
+    else if (x > 50 && x <= 75) {
+        printf("Interval (50,75]\n");
+    } 
+    else if (x > 75 && x <= 100) {
+        printf("Interval (75,100]\n");
+    } 
+    else {
+        printf("Out of Intervals\n");
+    }
+
+    return 0;
+}
+-------------------------------------------------------
+//t)Sort Numbers
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    
+    int min = (a <= b && a <= c) ? a : ((b <= c) ? b : c);
+    int max = (a >= b && a >= c) ? a : ((b >= c) ? b : c);
+    int mid = (a + b + c) - min - max;
+   
+    printf("%d\n%d\n%d\n\n", min, mid, max);
+    printf("%d\n%d\n%d\n", a, b, c);
+
+    return 0;
+}
+-----------------------------------------------------------
+//u)Float or int
+#include <stdio.h>
+int main() {
+float f;
+scanf ("%f",&f);
+if ( f - (int) f > 0.000 )
+printf("float %d %.3f\n",(int) f, f - (int) f);
+else
+printf("int %d\n", (int) f);
+
+    return 0;
+}
+-------------------------------------------------------
+//v)Comparison
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    char s;
+    
+    scanf("%d %c %d", &a, &s, &b);
+        switch (s) {
+        case '>':
+            if (a > b) {
+                printf("Right\n");
+            } else {
+                printf("Wrong\n");
+            }
+            break; 
+                
+        case '<':
+            if (a < b) {
+                printf("Right\n");
+                } else {
+                    printf("Wrong\n");
+                }
+                break;
+                
+        case '=':
+                if (a == b) {
+                    printf("Right\n");
+                } else {
+                    printf("Wrong\n");
+                }
+                break;
+        }
+    
+
+    return 0;
+}
+----------------------------------------------------
+//w)Mathematical Expression
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    char s, q;
+    scanf("%d %c %d %c %d", &a, &s, &b, &q, &c);
+
+    if (s == '+') {
+        if (a + b == c) {
+            printf("Yes\n");
+        } else {
+            printf("%d\n", a + b);
+        }
+    } 
+    else if (s == '-') {
+        if (a - b == c) {
+            printf("Yes\n");
+        } else {
+            printf("%d\n", a - b);
+        }
+    } 
+    else if (s == '*') {
+        if (a * b == c) {
+            printf("Yes\n");
+        } else {
+            printf("%d\n", a * b);
+        }
+    }
+
+    return 0;
+}
+-----------------------------------------------------
+//x)Two intervals
+#include <stdio.h>
+
+int main() {
+    long long l1, r1, l2, r2;
+    
+    scanf("%lld %lld %lld %lld", &l1, &r1, &l2, &r2);
+   
+    long long start = (l1 > l2) ? l1 : l2;
+    long long end = (r1 < r2) ? r1 : r2;
+
+    if (start <= end) {
+        printf("%lld %lld\n", start, end);
+    } else {
+        printf("-1\n");
+    }
+
+    return 0;
+}
+------------------------------------------------------
+//y)The last 2 digits
+#include <stdio.h>
+
+int main() {
+    long long A, B, C, D;
+    scanf("%lld %lld %lld %lld", &A, &B, &C, &D);
+
+    long long result = (A % 100) * (B % 100);
+    result = (result % 100) * (C % 100);
+    result = (result % 100) * (D % 100);
+
+    result = result % 100;
+
+    printf("%02lld\n", result);
+
+    return 0;
+}
+------------------------------------------------------
+//z)	Hard Compare
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    long long a, b, c, d;
+    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
+    double left_side = b * log(a);
+    double right_side = d * log(c);
+
+    if (left_side > right_side) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
+}

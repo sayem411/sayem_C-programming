@@ -136,25 +136,28 @@ int main() {
 }
 ------------------------------------
   //h)H - One Prime
-  #include <stdio.h>
+#include <stdio.h>
 
 int main() {
-    int x;
-    scanf("%d", &x);
+    int X;
+    scanf("%d", &X);
 
-    if (x <= 1) {
-        printf("NO\n");
-        return 0;
-    }
+    int isPrime = 1; 
 
-    for (int i = 2; i * i <= x; i++) {
-        if (x % i == 0) {
-            printf("NO\n");
-            return 0;
+    for (int i = 2; i < X; i++) {
+        if (X % i == 0) {
+
+            isPrime = 0; 
+            break;     
         }
     }
 
-    printf("YES\n");
+    if (isPrime == 1) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
     return 0;
 }
 -------------------------

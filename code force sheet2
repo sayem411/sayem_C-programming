@@ -132,7 +132,8 @@ int main() {
         printf("%llu\n", factorial);
     }
 
-    return
+    return 0;
+}
 ------------------------------------
   //h)H - One Prime
   #include <stdio.h>

@@ -1,0 +1,310 @@
+//a)A - 1 to N
+#include<stdio.h>
+int main(){
+int  i,n;
+scanf("%d",&n);
+for(i=1; i<=n; i++ ){
+    printf("%d\n",i);
+}
+return 0;
+}
+---------------------------
+  //b)B - Even Numbers
+  #include <stdio.h>
+int main(){
+    int N,i;
+    scanf("%d", &N);
+    if (N < 2) {
+        printf("-1\n");
+    } else {
+        for (i = 2; i <= N; i += 2) {
+            printf("%d\n", i);
+        }
+    }
+    return 0;
+}
+------------------------------------
+  //c)C - Even, Odd, Positive and Negative
+  #include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int x;
+    int even = 0, odd = 0, positive = 0, negative = 0;
+
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &x);
+
+        if(x % 2 == 0)
+            even++;
+        else
+            odd++;
+
+        if(x > 0)
+            positive++;
+        else if(x < 0)
+            negative++;
+    }
+
+    printf("Even: %d\n", even);
+    printf("Odd: %d\n", odd);
+    printf("Positive: %d\n", positive);
+    printf("Negative: %d\n", negative);
+
+    return 0;
+}
+---------------------------------
+  //d)D - Fixed Password
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    while (1) { 
+        scanf("%d", &x);
+
+        if (x == 1999) {
+            printf("Correct\n");
+            break;  
+        } else {
+            printf("Wrong\n");
+        }
+    }
+
+    return 0;
+}
+---------------------------
+  //e)E - Max	
+  #include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    long long num, max;
+
+   
+    scanf("%lld", &max);
+
+    for(int i = 1; i < N; i++) {
+        scanf("%lld", &num);
+        if(num > max) {
+            max = num;
+        }
+    }
+
+    printf("%lld\n", max);
+
+    return 0;
+}
+-------------------------------------------
+  //f)F - Multiplication table
+  #include <stdio.h>
+
+int main() {
+    int N;
+    
+    scanf("%d", &N);
+    
+    for(int i = 1; i <= 12; i++) {
+        printf("%d * %d = %d\n", N, i, N * i);
+    }
+    
+    return 0;
+}
+-----------------------------------------
+  //g)G - Factorial
+  #include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int N;
+        scanf("%d", &N);
+
+        unsigned long long factorial = 1;
+
+        for (int i = 1; i <= N; i++) {
+            factorial *= i;
+        }
+
+        printf("%llu\n", factorial);
+    }
+
+    return 0;
+}
+------------------------------------
+  //h)H - One Prime
+  #include <stdio.h>
+
+int main() {
+    int x;
+    scanf("%d", &x);
+
+    if (x <= 1) {
+        printf("NO\n");
+        return 0;
+    }
+
+    for (int i = 2; i * i <= x; i++) {
+        if (x % i == 0) {
+            printf("NO\n");
+            return 0;
+        }
+    }
+
+    printf("YES\n");
+    return 0;
+}
+-------------------------
+  //i)I - Palindrome
+  #include <stdio.h>
+
+int main() {
+    int n,original, reverse = 0, i;
+    original=n;
+
+    scanf("%d", &n);
+
+    for (i = n; i > 0; i /=10) {
+        reverse = reverse*10 +(i % 10); 
+    }
+   
+    printf(" %d\n", reverse);
+
+     if (original == reverse)
+        printf("YES\n");
+    else
+        printf("NO\n");
+
+    return 0;
+}
+
+----------------------------
+  //j)J - Primes from 1 to n
+ #include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    for (int i = 2; i <= N; i++) { 
+        int isPrime = 1;
+
+        for (int j = 2; j * j <= i; j++) {
+            if (i % j == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            printf("%d ", i);
+        }
+    }
+
+    return 0;
+}
+---------------------------------
+  //k)K - Divisors
+  #include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    for (int i = 1; i <= N; i++) {
+        if (N % i == 0) {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
+-------------------------------
+  //l)L - GCD
+  #include <stdio.h>
+
+int main() {
+    int a, b;
+
+    scanf("%d %d", &a, &b);
+
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    printf("%d\n", a);
+
+    return 0;
+}
+------------------------------
+  //m)M - Lucky Numbers
+  #include <stdio.h>
+
+int main() {
+    int A, B;
+    scanf("%d %d", &A, &B);
+
+    int found = 0;
+
+    for (int i = A; i <= B; i++) {
+        int num = i;
+        int lucky = 1;
+
+        while (num > 0) {
+            int digit = num % 10;
+            if (digit != 4 && digit != 7) {
+                lucky = 0;
+                break;
+            }
+            num /= 10;
+        }
+
+        if (lucky) {
+            printf("%d ", i);
+            found = 1;
+        }
+    }
+
+    if (!found) {
+        printf("-1");
+    }
+
+    return 0;
+}
+----------------------------
+//n)N - Numbers Histogram
+  #include <stdio.h>
+
+int main() {
+    char S;
+    int N;
+
+  
+    scanf(" %c", &S);
+
+    
+    scanf("%d", &N);
+
+    int X;
+
+   
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &X);
+
+        for (int j = 0; j < X; j++) {
+            printf("%c", S);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+  

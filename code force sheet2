@@ -112,15 +112,16 @@ int main() {
 }
 -----------------------------------------
   //g)G - Factorial
+
   #include <stdio.h>
 
 int main() {
-    int T;
+    int T,N;
     scanf("%d", &T);
 
-    while (T--) {
-        int N;
-        scanf("%d", &N);
+    for (int i = 0; i < T; i++) {
+    scanf("%d", &N);
+    
 
         unsigned long long factorial = 1;
 
@@ -131,8 +132,7 @@ int main() {
         printf("%llu\n", factorial);
     }
 
-    return 0;
-}
+    return
 ------------------------------------
   //h)H - One Prime
   #include <stdio.h>

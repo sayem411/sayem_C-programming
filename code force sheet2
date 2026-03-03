@@ -242,7 +242,9 @@ int main() {
 }
 ------------------------------
   //m)M - Lucky Numbers
-  #include <stdio.h>
+
+
+#include <stdio.h>
 
 int main() {
     int A, B;
@@ -251,16 +253,15 @@ int main() {
     int found = 0;
 
     for (int i = A; i <= B; i++) {
-        int num = i;
         int lucky = 1;
 
-        while (num > 0) {
+        // Replaced while loop with for loop
+        for (int num = i; num > 0; num /= 10) {
             int digit = num % 10;
             if (digit != 4 && digit != 7) {
                 lucky = 0;
                 break;
             }
-            num /= 10;
         }
 
         if (lucky) {

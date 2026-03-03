@@ -26,12 +26,9 @@ int main(){
 ------------------------------------
   //c)C - Even, Odd, Positive and Negative
   #include <stdio.h>
-
 int main() {
-    int N;
+    int N,x;
     scanf("%d", &N);
-
-    int x;
     int even = 0, odd = 0, positive = 0, negative = 0;
 
     for(int i = 0; i < N; i++) {

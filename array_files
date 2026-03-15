@@ -1,0 +1,131 @@
+/* C program to insert an element in a specified position in a given array*/
+ 
+#include <stdio.h>
+int main()
+{
+    int array[100];
+    int i, n, x, pos;
+ 
+    printf("Enter the number of elements in the array \n");
+    scanf("%d", &n);
+    printf("Enter the elements \n");
+ 
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &array[i]);
+    }
+ 
+    printf("Input array elements are: \n");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", array[i]);
+    }
+    printf("\nEnter the new element to be inserted: ");
+    scanf("%d", &x);
+    printf("Enter the position where element is to be inserted: ");
+    scanf("%d", &pos);
+ 
+    //shift all elements 1 position forward from the place
+    //where element needs to be inserted
+    n=n+1;
+    for(i = n-1; i >= pos; i--)
+        array[i]=array[i-1];
+ 
+    array[pos-1]=x; //Insert the element x on the specified position
+ 
+    //print the new array
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", array[i]);
+    }
+}
+---------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    int array[100], i, n, pos;
+
+    printf("Enter number of elements in array: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements: \n", n);
+    for (i = 0; i < n; i++)
+        scanf("%d", &array[i]);
+
+    printf("Enter the position where you want to delete: ");
+    scanf("%d", &pos);
+
+    // ডিলিট করার লজিক: এলিমেন্টগুলোকে এক ঘর বামে সরানো
+    for (i = pos - 1; i < n - 1; i++) {
+        array[i] = array[i + 1];
+    }
+
+    n--; // অ্যারের সাইজ ১ কমিয়ে দেওয়া হলো
+
+    printf("Resultant array is: \n");
+    for (i = 0; i < n; i++)
+        printf("%d ", array[i]);
+
+    return 0;
+}
+------------------------------------------------------------------------
+// Bubble sort in C
+
+#include <stdio.h>
+
+// perform the bubble sort
+void bubbleSort(int array[], int size) {
+
+  // loop to access each array element
+  for (int step = 0; step < size - 1; ++step) {
+      
+    // loop to compare array elements
+    for (int i = 0; i < size - step - 1; ++i) {
+      
+      // compare two adjacent elements
+      // change > to < to sort in descending order
+      if (array[i] > array[i + 1]) {
+        
+        // swapping occurs if elements
+        // are not in the intended order
+        int temp = array[i];
+        array[i] = array[i + 1];
+        array[i + 1] = temp;
+      }
+    }
+  }
+}
+
+// print array
+void printArray(int array[], int size) {
+  for (int i = 0; i < size; ++i) {
+    printf("%d  ", array[i]);
+  }
+  printf("\n");
+}
+
+int main() {
+  int data[] = {-2, 45, 0, 11, -9};
+  
+  // find the array's length
+  int size = sizeof(data) / sizeof(data[0]);
+
+  bubbleSort(data, size);
+  
+  printf("Sorted Array in Ascending Order:\n");
+  printArray(data, size);
+}
+
+-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

@@ -11,16 +11,14 @@ ___________________________________________________________
 //input array element #62
 
 #include <stdio.h>
-int main(){
-int size;
-int i,sum,avg,max;
-printf("Enter the size of array: ");
-scanf("%d",&size);
+int main()
+{
+int size = 5;
 int nums[size];
-
-printf("Input:");
+int i,sum,avg,max;
+printf("Input\n");
 for(i=0;i<size;i++){
-scanf("%d",&nums[i]);
+scanf("%d\n",&nums[i]);
 }
 sum = 0;
 max = nums[0];
@@ -36,6 +34,7 @@ printf("avg = %d\n",avg);
 printf("Max = %d\n",max);
 return 0;
 }
+
 
 ___________________________________________________________
 variable-length array element #63

@@ -8,17 +8,19 @@ printf("Size of scores array = %d\n",length);
 return 0;
 }
 ___________________________________________________________
-input array element #62
+//input array element #62
 
 #include <stdio.h>
-int main()
-{
-int size = 5;
-int nums[size];
+int main(){
+int size;
 int i,sum,avg,max;
-printf("Input\n");
+printf("Enter the size of array: ");
+scanf("%d",&size);
+int nums[size];
+
+printf("Input:");
 for(i=0;i<size;i++){
-scanf("%d\n",&nums[i]);
+scanf("%d",&nums[i]);
 }
 sum = 0;
 max = nums[0];
@@ -34,6 +36,7 @@ printf("avg = %d\n",avg);
 printf("Max = %d\n",max);
 return 0;
 }
+
 ___________________________________________________________
 variable-length array element #63
 

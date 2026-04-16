@@ -1,4 +1,4 @@
-else If condition #31
+//else If condition #31
 
 #include <stdio.h>
 int main(){
@@ -15,7 +15,7 @@ printf("They are same age");
 return 0;
 }
 ___________________________________________________________________
-else if condition-2 #32
+//else if condition-2 #32
 
 #include <stdio.h>
 int main(void){
@@ -40,7 +40,7 @@ printf("Wrong code");
 return 0;
 }
 ___________________________________________________________________
-switch statement-1 #33
+//switch statement-1 #33
 
 #include <stdio.h>
 int main(void){
@@ -81,7 +81,7 @@ printf("Wrong day number\n");
 return 0;
 }
 ___________________________________________________________________
-switch statement-2 #34
+//switch statement-2 #34
 
 #include <stdio.h>
 int main(void)
@@ -108,7 +108,7 @@ printf("Wrong day\n");
 return 0;
 }
 ___________________________________________________________________
-Nested condition in c #35
+//Nested condition in c #35
 
 #include <stdio.h>
 #include<stdbool.h>
@@ -129,7 +129,7 @@ printf("You are not allowed\n");
 return 0;
 }
 ___________________________________________________________________
-which number is big #36
+//which number is big #36
 
 #include <stdio.h>
 int main(){
@@ -146,7 +146,7 @@ printf("B is greater than A\n");
 return 0;
 }
 ___________________________________________________________________
-Even-odd number #38
+//Even-odd number #38
 
 #include <stdio.h>
 int main(){
@@ -203,31 +203,6 @@ printf("Invaled Letter\n");
 }
 return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

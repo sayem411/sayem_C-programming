@@ -24,7 +24,7 @@ printf("%d * %d = %d\n",a,b,a*b);
 printf("%d / %d = %d\n",a,b,a/b);
 return 0;
 }
-_______________________________________________________________
+
 //simple calculation in c -2 #3
 
 #include <stdio.h>
@@ -43,8 +43,8 @@ printf("%d / %d = %d\n",a,b,a/b);
 printf("%d\n",abc);
 return 0;
 }
-___________________________________________
-sum of last digit
+
+//sum of last digit
 
 #include <stdio.h>
 int main() {
@@ -56,8 +56,8 @@ int sum=last_digit_N+last_digit_M;
 printf("%d\n",sum);
 return 0;
 }
-___________________________________________________________________
-//Basic data in c #4
+
+// Basic data in c #4
 
 #include <stdio.h>
 int main()
@@ -70,7 +70,7 @@ printf("%f\n",num2);
 printf("%c\n",ch);
 return 0;
 }
-___________________________________________________________________
+
 //Basic data in c-2 #5
 
 #include <stdio.h>
@@ -85,7 +85,7 @@ num = num2;
 printf("%d\n",num);
 return 0;
 }
-___________________________________________________________________
+
 //Basic Data in c-3 #6
 
 #include <stdio.h>
@@ -94,7 +94,7 @@ const float PI=3.1416f;
 printf("%f\n",PI);
 return 0;
 }
-___________________________________________________________________
+
 //User input in c #7
 
 #include <stdio.h>
@@ -107,8 +107,7 @@ scanf("%f %f",&c, &d);
 printf("%f %f\n",c,d);
 return 0;
 }
-___________________________________________________________________
-simple calculation project in c #8
+//simple calculation project in c #8
 #include <stdio.h>
 int main(){
 float num1,num2,result;
@@ -121,61 +120,56 @@ result= num1 * num2;
 printf("%f * %f = %f\n",num1,num2,result);
 result= num1 / num2;
 printf("%f / %f = %f\n",num1,num2,result);
-return 0;
+return 0;// 10 2.5
 }
-// 10 2.5
-___________________________________________________________________
-Integer type data in c #9
+
+//Integer type data in c #9
 
 #include <stdio.h>
 int main(){
 //signed Integer data
-//short %d %hi
+
 short a;
-scanf("%hi",&a);
+scanf("%hi",&a);//short %d %hi
 printf("I am short - %hi\n",a);
 
-//Int %d %i
-int b = 1000;
+int b = 1000;//Int %d %i
 printf("I am int - %d\n",b);
 
-//long %ld %li
-long c = 1200l;
+long c = 1200l;//long %ld %li
 printf("I am long - %ld\n",c);
 
-//long long %lld %lli
-long long d = 34343ll;
+
+long long d = 34343ll;//long long %lld %lli
 printf("I am long long- %lld\n",d);
 
-//octal int %o
-int o = 0777;
+int o = 0777;//octal int %o
 printf("I am octal - %o\n",o);
 
-//hexadecimal int %x %x
-int h = 0Xfff;
+int h = 0Xfff;//hexadecimal int %x %x
 printf("I am hexadecimal - %x\n",h);
 return 0;
 }
-___________________________________________________________________
-Integer type data in c-2 #10
+
+//Integer type data in c-2 #10
 
 #include <stdio.h>
 int main(){
 // unsigned Integers
 printf("Unsigned Integers\n");
-//unsigned short - %hu
-unsigned short us = 41;
+
+unsigned short us = 41;//unsigned short - %hu
 printf("unsigned short - %hu\n",us);
-//unsigned long - %lu
-unsigned long ul = 44545;
+
+unsigned long ul = 44545;//unsigned long - %lu
 printf("unsigned long - %lu\n",ul);
-//unsigned long long - %llu
-unsigned long long ull = 44545;
+
+unsigned long long ull = 44545;//unsigned long long - %llu
 printf("unsigned long long - %llu\n",ull);
 return 0;
 }
-___________________________________________________________________
-Float Data in c #11
+
+//Float Data in c #11
 
 #include <stdio.h>
 int main(void){
@@ -192,8 +186,8 @@ long double ld = 4589654695.254;
 printf("%lf\n",ld);
 return 0;
 }
-___________________________________________________________________
-charecter data in c #12
+
+//charecter data in c #12
 
 #include <stdio.h>
 int main(void)
@@ -205,12 +199,12 @@ printf("char - %c\n",a);
 printf("char - %d\t %c\n",a,b);
 return 0;
 }
-___________________________________________________________________
-string data in c #13
+
+//string data in c #13
 
 #include <stdio.h>
 int main(void){
-char name [20];
+char Name [20];
 Name [0]='A';
 Name [1]='S';
 Name [2]=' ';
@@ -219,7 +213,7 @@ Name [4]='A';
 Name [5]='Y';
 Name [6]='E';
 Name [7]='M';
-printf("%s\n",name);
+printf("%s\n",Name);
 
 char name1[20]= {'A','s', ' ','S','a','y','e','m'};
 printf("%s\n",name1);
@@ -229,8 +223,8 @@ printf("%s\n",name2);
 
 return 0;
 }
-___________________________________________________________________
-Boolean works in c #14
+
+//Boolean works in c #14
 
 #include <stdio.h>
 int main(void){
@@ -256,8 +250,8 @@ printf("User Logged out\n");
 }
 return 0;
 }
-___________________________________________________________________
-boolean works in c-2 #15
+
+//boolean works in c-2 #15
 
 #include <stdio.h>
 #include<stdbool.h>

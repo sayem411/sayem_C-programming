@@ -1,11 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int a[] = {5, 8, 5, 12, 5, 9};
-    int n = sizeof(a) / sizeof(a[0]);
-    int key, count = 0;
+         int a[100],n;
+         int key, found = -1, count = 0;
+     printf("Enter number of elements: ");
+    scanf("%d", &n);
 
-    printf("Total number of elements = %d\n", n);
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++){
+         scanf("%d", &a[i]);
+    }
+
+      printf("%d elements are: ", n);
+    for (int i = 0; i < n; i++){
+         printf("%d ",a[i]);
+    }
+   
+    printf("\nTotal number of elements = %d\n", n);
 
     printf("Enter value to count its occurrences: ");
     scanf("%d", &key);

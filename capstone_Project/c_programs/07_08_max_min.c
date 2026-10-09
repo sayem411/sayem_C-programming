@@ -19,7 +19,7 @@ int main() {
     printf("\nArray elements:\n");
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
-            printf("%d", arr[i][j]);
+            printf("%d ", arr[i][j]);
             sum += arr[i][j];
 
             if (arr[i][j] > max)

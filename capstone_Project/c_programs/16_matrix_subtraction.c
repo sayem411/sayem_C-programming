@@ -1,18 +1,37 @@
 #include <stdio.h>
-
+ 
 int main() {
-    int a[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    int b[3][3] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
-    int diff[3][3];
-
-    for (int i = 0; i < 3; i++)
-        for (int j = 0; j < 3; j++)
-            diff[i][j] = a[i][j] - b[i][j];
-
-    printf("A - B =\n");
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++)
-            printf("%4d", diff[i][j]);
+    int a[100][100],b[100][100],sub[100][100];
+    int rows,cols;
+ 
+    printf("Enter rows and columns: ");
+    scanf("%d %d",&rows,&cols);
+ 
+    printf("Enter First matrix elements:\n");
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<cols;j++) {
+            scanf("%d",&a[i][j]);
+        }
+    }
+ 
+       printf("Enter Second matrix elements:\n");
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<cols;j++) {
+            scanf("%d",&b[i][j]);
+        }
+    }
+ 
+ 
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<cols;j++) {
+           sub[i][j]=a[i][j]-b[i][j];
+        }
+    }
+         printf("sum of matrix elements:\n");
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<cols;j++) {
+           printf("%d ",sub[i][j]);
+        }
         printf("\n");
     }
     return 0;

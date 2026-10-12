@@ -15,8 +15,8 @@ int main() {
     }
     int symmetric = 1;
 
-    for (int i = 0; i < 3 && symmetric; i++)
-        for (int j = 0; j < 3; j++)
+    for (int i = 0; i < rows && symmetric; i++)
+        for (int j = 0; j < cols; j++)
             if (a[i][j] != a[j][i]) {
                 symmetric = 0;
                 break;

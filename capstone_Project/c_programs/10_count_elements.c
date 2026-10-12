@@ -2,7 +2,7 @@
 
 int main() {
          int a[100],n;
-         int key, found = -1, count = 0;
+         int key,count = 0;
      printf("Enter number of elements: ");
     scanf("%d", &n);
 

@@ -13,10 +13,10 @@ int main() {
        
     }
     for (int i = 0; i < n; i++) {
-        int sum = 0;
+        int colsum = 0;
         for (int j = 0; j < n; j++)
-            sum += a[j][i];
-        printf("Sum of row %d = %d\n", i, sum);
+            colsum += a[j][i];
+        printf("Sum of row %d = %d\n", i, colsum);
     }
     return 0;
 }

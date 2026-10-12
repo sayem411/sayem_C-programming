@@ -16,7 +16,7 @@ int main() {
 
     int mainSum = 0, secSum = 0;
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < rows; i++) {
         mainSum += a[i][i];
         secSum += a[i][rows - 1 - i];
     }

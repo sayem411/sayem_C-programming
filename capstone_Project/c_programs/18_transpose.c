@@ -2,7 +2,7 @@
 #include <stdio.h>
  
 int main() {
-    int a[100][100],b[100][100],tr[100][100];
+    int a[100][100],tr[100][100];
     int rows,cols;
  
     printf("Enter rows and columns: ");

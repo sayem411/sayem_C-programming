@@ -15,7 +15,7 @@ int main() {
     }
 
     printf("Main diagonal: ");
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < rows; i++)
         printf("%d ", a[i][i]);
     printf("\n");
     return 0;

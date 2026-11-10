@@ -1,40 +1,33 @@
 #include <stdio.h>
 #include <math.h>
 
-void addition(int *a, int *b, int *result)
-{
+void addition(int *a, int *b, int *result){
     *result = *a + *b;
 }
 
-void subtraction(int *a, int *b, int *result)
-{
+void subtraction(int *a, int *b, int *result){
     *result = *a - *b;
 }
 
-void multiplication(int *a, int *b, int *result)
-{
+void multiplication(int *a, int *b, int *result){
     *result = *a * *b;
 }
 
-void division(int *a, int *b, float *result)
-{
+void division(int *a, int *b, float *result){
     if (*b != 0)
         *result = (float)*a / *b;
 }
 
-void square(int *a, int *result)
-{
+void square(int *a, int *result){
     *result = *a * *a;
 }
 
-void root(int *a, float *result)
-{
+void root(int *a, float *result){
     if (*a >= 0)
         *result = sqrt(*a);
 }
 
-int main()
-{
+int main(){
     int a, b, choice, result;
     float answer;
 

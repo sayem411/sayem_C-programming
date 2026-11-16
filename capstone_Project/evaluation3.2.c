@@ -11,10 +11,9 @@ struct student
 
 int main()
 {
-    struct student *ptr;
-    ptr = malloc(sizeof(struct student));
+    struct student *ptr = (struct student*)malloc(sizeof(struct student));
     ptr->roll = 01;
-    strcpy(ptr->name, "Niloy");
+    strcpy(ptr->name, "Sayem");
     printf("Roll: %d\n", ptr->roll);
     printf("Name: %s\n", ptr->name);
 }

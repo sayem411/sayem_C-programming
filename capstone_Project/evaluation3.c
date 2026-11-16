@@ -19,19 +19,18 @@ void tryRaiseByValue(struct Employee e, float percent)
     printf("Inside tryRaiseByValue salary salary = %.2f\n", e.salary);
 }
 
-int main(void)
-{
-    struct Employee emp={1,"Sayem",50000};
+int main(){
+    struct Employee e={1,"Sayem",50000};
 
-    printf("Initial salary: %.2f\n\n", emp.salary);
+    printf("Initial salary: %.2f\n\n", e.salary);
 
   
-    tryRaiseByValue(emp, 10);
+    tryRaiseByValue(e, 10);
 
-    printf("After tryRaiseByValue salary = %.2f\n", emp.salary);
+    printf("After tryRaiseByValue salary = %.2f\n", e.salary);
 
-    giveRaise(&emp, 20);
-    printf("After giveRaise salary = %.2f\n", emp.salary);
+    giveRaise(&e, 20);
+    printf("After giveRaiseBy salary = %.2f\n", e.salary);
 
     return 0;
 }

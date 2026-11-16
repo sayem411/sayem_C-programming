@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 struct student
 {
@@ -9,9 +11,10 @@ struct student
 
 int main()
 {
-    struct student s = {1, "Durjoy", 25.5};
-    struct student *ptr = &s;
-
-    printf("Roll: %d\n", (*ptr).roll);
+    struct student *ptr;
+    ptr = malloc(sizeof(struct student));
+    ptr->roll = 01;
+    strcpy(ptr->name, "Niloy");
     printf("Roll: %d\n", ptr->roll);
+    printf("Name: %s\n", ptr->name);
 }

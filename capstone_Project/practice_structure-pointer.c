@@ -15,11 +15,11 @@ int withdraw(struct Account *a, float amount){
         a->balance = a->balance - amount;
         return 1;                
     }
-    return 0;   
+    return 0;         
 }
 
 void wrongDeposit(struct Account a, float amount){
-    a.balance = a.balance + amount; 
+    a.balance = a.balance + amount; // shudhu copy-te change hobe
 }
 
 int main(){
